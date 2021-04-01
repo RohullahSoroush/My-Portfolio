@@ -1,0 +1,45 @@
+/*********************** FOOTER SECTION **************************/
+.footer {
+  background-color: $color-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*********************** FOOTER COPYRIGHT TEXT **************************/
+.copyright {
+  width: 50%;
+  color: $color-white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/*********************** FOOTER HEART(LOVE) **************************/
+.love {
+  color: red;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  animation-name: love-love;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+/*********************** FOOTER AUTHORM NAME AND LINK **************************/
+.fullname {
+  &__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-white;
+    line-height: 2rem;
+    transition: all 0.2s;
+    margin-left: -0.2rem;
+
+    &:hover {
+      color: $color-primary;
+      text-shadow: 1rem 2rem 3rem rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+}

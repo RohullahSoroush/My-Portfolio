@@ -1,0 +1,263 @@
+/*********************** PROJECTS SECTION **************************/
+.project-section {
+  padding-bottom: 9rem;
+
+  /*********************** PROJECTS HEADER **************************/
+  &__header {
+    display: inline-block;
+    margin-left: 5vw;
+    position: relative;
+  }
+}
+
+/*********************** PROJECTS CONTAINER **************************/
+.project__container {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  margin: 5rem 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*********************** PROJECTS CARD LEFT AND RIGHT **************************/
+.card-right,
+.card-left {
+  margin-bottom: 13rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and(max-width:$bp-large) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*********************** PROJECT CARDS IMAGE LEFT AND RIGHT **************************/
+  &__image {
+    position: relative;
+    width: 50%;
+    height: 80%;
+    border-radius: $border-radius-normal;
+
+    @media only screen and(max-width:$bp-large) {
+      width: 70%;
+    }
+
+    &:hover::after {
+      background-color: rgba($color-primary, 0);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color-primary, 0.5);
+      z-index: 10;
+      border-radius: $border-radius-normal;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.card-right {
+  @media only screen and(max-width:$bp-large) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+/*********************** PROJECTS CARD IMAGE **************************/
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: $border-radius-normal;
+}
+
+.card {
+  /*********************** PROJECT DETAILS CONTAINER **************************/
+  &__details {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding-left: 2rem;
+
+    @media only screen and(max-width:$bp-large) {
+      width: 70%;
+      align-items: center;
+      justify-content: flex-start;
+      // justify-content: center;
+      padding-left: 0;
+    }
+  }
+
+  /*********************** PROJECT CARD RIGHT DETAILS **************************/
+  &-right__details {
+    padding-left: 0;
+    margin-right: 5rem;
+
+    @media only screen and(max-width:$bp-large) {
+      margin-right: 0;
+    }
+  }
+
+  /*********************** PROJECT NAME **************************/
+  &__name {
+    font-size: 3rem;
+    text-align: center;
+
+    @media only screen and(max-width:$bp-large) {
+      margin-top: -7rem;
+      z-index: 70;
+      font-size: 4rem;
+    }
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    width: 78%;
+  }
+
+  /*********************** PROJECT DETAILS **************************/
+  &__text {
+    width: 130%;
+    background-color: $color-grey;
+    padding: 2rem;
+    margin: 2rem 0 2rem -7rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    text-align: left;
+    z-index: 20;
+    border-radius: $border-radius-normal;
+
+    @media only screen and(max-width:$bp-large) {
+      margin: 2rem 0;
+      margin-top: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  /*********************** PROJECT DETAILS FOR RIGHT CARD **************************/
+  &-right__text {
+    margin-left: 0;
+  }
+
+  /*********************** PROJECTS TECHNOLOGIES **************************/
+  &__tech {
+    width: 25rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    grid-row-gap: 0.5rem;
+
+    @media only screen and(max-width:$bp-large) {
+      width: 50%;
+      justify-items: right;
+    }
+
+    @media only screen and(max-width:$bp-medium) {
+      width: 53%;
+    }
+    @media only screen and(max-width:$bp-small) {
+      // grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+      width: 59%;
+    }
+    @media only screen and(max-width:$bp-smaller) {
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      width: 78%;
+    }
+    @media only screen and(max-width:18.75rem) {
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      width: 85%;
+    }
+
+    &--item {
+      width: 11rem;
+
+      @media only screen and(max-width:$bp-large) {
+        width: 11rem;
+        text-align: justify;
+      }
+
+      p {
+        display: inline-block;
+        font-size: 1.3rem;
+        margin-left: 0.5rem;
+      }
+
+      i {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  /*********************** PROJECTS LINKS TO SOURCE CODE AND LIVE PREVIEW **************************/
+  &__links {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and(max-width:$bp-large) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      i {
+        animation-name: iconTopToBottom;
+        animation-duration: 0.3s;
+      }
+    }
+
+    &--github {
+      margin-right: 2rem;
+    }
+
+    &--github,
+    &--live {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-setting;
+      text-decoration: none;
+      background-color: $color-primary;
+      color: #fff;
+
+      @media only screen and(max-width:$bp-large) {
+        margin: 0 2rem;
+      }
+
+      &:active {
+        background-color: #fff;
+
+        & i {
+          color: $color-primary;
+        }
+      }
+
+      i {
+        font-size: 2.5rem;
+        transition: color 0.2s, background-color 0.2s;
+      }
+    }
+  }
+}

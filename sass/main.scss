@@ -1,0 +1,48 @@
+@import 'abstract/variables';
+@import 'abstract/functions';
+@import 'abstract/mixins';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/animatecss';
+@import 'components/buttons';
+@import 'components/cover';
+@import 'components/dropdown';
+@import 'components/particles';
+@import 'components/typedjs';
+@import 'components/logo';
+@import 'components/socialLinks';
+@import 'components/option';
+@import 'components/profilePhoto';
+@import 'components/edgeLine';
+
+
+@import 'layouts/footer';
+@import 'layouts/forms';
+@import 'layouts/grid';
+@import 'layouts/header';
+@import 'layouts/navigation';
+@import 'layouts/sidebar';
+@import 'layouts/about';
+@import 'layouts/skills';
+@import 'layouts/project';
+@import 'layouts/contact';
+
+
+@import 'pages/contact';
+@import 'pages/home';
+
+@import 'themes/admin';
+@import 'themes/theme';
+
+@import 'vendors/bootstrap';
+
+
+
+
+
+

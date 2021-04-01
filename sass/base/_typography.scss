@@ -1,0 +1,57 @@
+/*********************** BODY TYPOGRAPHY **************************/
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $color-grey-dark;
+}
+
+/*********************** HEADING SECONDARY **************************/
+.heading-secondary {
+  font-size: 3rem;
+  margin: 1rem;
+  padding-left: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+
+  /*********************** HEADING SECONDARY FIRST WORD **************************/
+  &__first-letter {
+    font-weight: 700;
+    display: inline-block;
+    margin: 0.75rem 0;
+    margin-top: 1.25rem;
+    color: $color-primary-dark;
+    margin-right: 0.2rem;
+  }
+}
+
+/*********************** HEADING SECONDARY LINE **************************/
+.heading-secondary-line {
+  display: inline-block;
+  height: 2px;
+  width: 50rem;
+  background-color: $color-grey-dark;
+  transform: translateY(-0.5rem);
+  margin-left: 1rem;
+}
+
+/*********************** HEADING TERTAIARY **************************/
+.heading-tertiary {
+  font-size: 2rem;
+  color: $color-white;
+  margin: 1rem 2rem;
+  padding: 0 1rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.1rem;
+  border-bottom: 2px solid $color-grey-dark;
+
+  /*********************** HEADING TERTAIARY FIRST WORD **************************/
+  &__first-letter {
+    color: $color-primary-dark;
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+  }
+}
