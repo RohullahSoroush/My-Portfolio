@@ -41,7 +41,7 @@ hamburgerBtn.addEventListener("click", function () {
 
 // TYPED.JS LIBRARY
 var typed = new Typed(".job-typewriter", {
-  strings: ["Frontend WEB Developer", "Competitive Programmer"],
+  strings: ["Frontend Web Developer", "Competitive Programmer"],
   typeSpeed: 40,
   backSpeed: 40,
   loop: true,
