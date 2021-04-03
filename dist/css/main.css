@@ -877,9 +877,9 @@ body {
 .navigation__logo {
   display: inline-block;
   position: relative;
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 1rem;
+  width: 18rem;
+  height: 18rem;
+  margin-bottom: -2rem;
 }
 
 .navigation__logo-img {
