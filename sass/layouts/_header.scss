@@ -1,0 +1,93 @@
+/*********************** HEADER CONTAINER **************************/
+.header {
+  color: $color-white;
+  line-height: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*********************** HEADER CONTENT CONTAINER **************************/
+  &__content {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/*********************** FULL NAME BOX **************************/
+.fullname {
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: 400;
+
+  @media only screen and(max-width:$bp-smaller) {
+    font-size: 2.5rem;
+  }
+}
+
+/*********************** HELLO TEXT **************************/
+.hello {
+  font-weight: 400;
+}
+
+/*********************** NAME TEXT **************************/
+.name {
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  color: $color-primary;
+  font-weight: 600;
+
+  @media only screen and(max-width:$bp-smaller) {
+    font-size: 5.5rem;
+  }
+}
+
+/*********************** JOB TEXT **************************/
+.job {
+  color: $color-primary;
+  font-size: 3.5rem;
+  display: inline-block;
+  padding: 1rem;
+  padding-top: 0;
+  font-weight: 600;
+
+  @media only screen and(max-width:$bp-smaller) {
+    font-size: 3rem;
+  }
+
+  &__a {
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+/*********************** LEARN ABOUT ME BUTTON --> ABOUT SECTION **************************/
+.about-me-btn {
+  z-index: 20;
+  transition: all 0.3s;
+  font-weight: 500;
+  &,
+  &:link,
+  &:visited {
+    background-color: rgb(12, 15, 24);
+    border-radius: $border-radius-normal;
+    align-self: center;
+    margin-top: 2rem;
+    border: 2px solid $color-primary;
+    box-shadow: 0.5rem 1rem 3rem rgba($color: #000000, $alpha: 0.7);
+  }
+
+  &:hover {
+    box-shadow: 0.5rem 1.5rem 3rem rgba($color: #000000, $alpha: 0.9);
+    transform: scale(1.03);
+  }
+
+  &:active {
+    box-shadow: 0.5rem 1.5rem 3rem rgba($color: #000000, $alpha: 0.4);
+    transform: scale(1);
+  }
+}

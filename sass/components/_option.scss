@@ -1,0 +1,84 @@
+/*********************** OPTIONS CONATINER ON BOTTOM RIGHT CORNER **************************/
+.option {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3.5rem;
+  z-index: 40;
+  display: flex;
+}
+
+/*********************** OPTIONS SETTING BUTTON **************************/
+.setting {
+  width: 3.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-setting;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+
+  &:hover {
+    .setting__icon {
+      font-size: 2.2rem;
+      animation-name: rotateSetting360;
+      animation-duration: 1s;
+    }
+  }
+  &:active {
+    background-color: #fff;
+    .setting__icon {
+      animation-name: none;
+      color: $color-setting;
+    }
+  }
+
+  /*********************** SETTING ICON **************************/
+  &__icon {
+    font-size: 2.2rem;
+    color: white;
+    transition: color 0.3s;
+    text-align: center;
+  }
+}
+
+/*********************** OPTIONS PAGE SCROLL BUTTON **************************/
+.page-scroll {
+  width: 3.5rem;
+  height: 100%;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-setting;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    & .page-scroll__icon {
+      animation-name: none;
+      font-size: 2.7rem;
+    }
+  }
+  &:active {
+    background-color: #fff;
+    & .page-scroll__icon {
+      animation-name: none;
+      color: $color-setting;
+    }
+  }
+
+  /*********************** PAGE SCROLL ICON **************************/
+  &__icon {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: white;
+    animation-name: iconBottomToTop;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: color 0.3s;
+  }
+}
